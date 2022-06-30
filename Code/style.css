@@ -26,13 +26,18 @@ button,
   color: black;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Fugaz One", cursive;
 }
 
 header {
   font-style: oblique;
   font-weight: 600;
+}
+
+h2 {
+  display: none;
 }
 
 .card.navbar--main {
@@ -111,6 +116,7 @@ li.nav__item a {
   font-size: 20px;
   padding: 20px;
   border: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -318,5 +324,42 @@ input {
 
   .nav_toggle:checked ~ nav {
     display: flex;
+  }
+
+  /* email address bar & text removal */
+  .form {
+    display: none;
+  }
+
+  .directions {
+    display: none;
+  }
+
+  /* H2 text appearance */
+  h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  /* text aligned to centre */
+  header,
+  h1 {
+    text-align: center;
+  }
+
+  /* remvoving slogans */
+
+  .card.slogan--main {
+    display: none;
+  }
+
+  /* removing iphone picture & adding app store buttons*/
+  #phonePic {
+    display: none;
   }
 }
