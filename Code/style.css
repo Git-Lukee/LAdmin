@@ -125,6 +125,12 @@ li.nav__item a {
   width: 400px;
 }
 
+#googlePlay,
+#appleStore,
+#downloadText {
+  display: none;
+}
+
 .card.navbar--main {
   background: none;
   color: none;
@@ -361,5 +367,19 @@ input {
   /* removing iphone picture & adding app store buttons*/
   #phonePic {
     display: none;
+  }
+
+  #downloadText {
+    display: flex;
+  }
+
+  #googlePlay,
+  #appleStore {
+    display: flex;
+  }
+
+  .card.iphone--adDemo {
+    display: flex;
+    flex-direction: column;
   }
 }
