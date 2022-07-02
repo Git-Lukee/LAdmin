@@ -31,13 +31,13 @@ h2 {
   font-family: "Fugaz One", cursive;
 }
 
+#futureText {
+  display: none;
+}
+
 header {
   font-style: oblique;
   font-weight: 600;
-}
-
-h2 {
-  display: none;
 }
 
 .card.navbar--main {
@@ -165,7 +165,7 @@ nav {
 
 h1 {
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .directions {
@@ -193,12 +193,13 @@ input {
 .card.slogan--main {
   background: none;
   color: none;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
   border: none;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .card:nth-of-type(1) {
@@ -342,7 +343,7 @@ input {
   }
 
   /* H2 text appearance */
-  h2 {
+  #futureText {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -371,11 +372,15 @@ input {
 
   #downloadText {
     display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Fugaz One", cursive;
   }
 
   #googlePlay,
   #appleStore {
     display: flex;
+    width: 170px;
   }
 
   .card.iphone--adDemo {
